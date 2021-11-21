@@ -11,6 +11,8 @@
         android:layout_height="match_parent"
         android:background="#6D6875">
 
+
+
         <RelativeLayout
             android:layout_marginTop="32dp"
             android:layout_marginRight="20dp"
@@ -48,18 +50,15 @@
 
 
         <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="581dp">
+            android:id="@+id/scrollView"
+            android:layout_width="376dp"
+            android:layout_height="576dp"
+            android:layout_marginStart="16dp">
 
-
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="200dp"
-                android:layout_marginRight="20dp"
-                android:background="#FFCDB2">
-
+                android:orientation="vertical">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -74,7 +73,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="0dp"
-                        android:text="Mon Test"
+                        android:text="Mon Tweet"
                         android:textColor="#6D6875"
                         android:textSize="24sp" />
 
@@ -82,7 +81,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
-                        android:text="2nd texte"
+                        android:text="Contenue Tweet"
                         android:textColor="#6D6875"
                         android:textSize="24sp" />
 
@@ -91,24 +90,147 @@
                         android:layout_width="82dp"
                         android:layout_height="82dp"
                         android:layout_alignParentEnd="true"
-                        android:contentDescription="Tweet"
+                        android:contentDescription="Profil utilisateur"
                         tools:srcCompat="@tools:sample/avatars" />
 
                 </RelativeLayout>
 
-            </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#B5838D">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Mon Tweet"
+                        android:textColor="#6D6875"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Contenue Tweet"
+                        android:textColor="#6D6875"
+                        android:textSize="24sp" />
+
+
+                    <ImageView
+                        android:layout_width="82dp"
+                        android:layout_height="82dp"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="Profil utilisateur"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="300dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="#B5838D">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:text="Mon Tweet"
+                        android:textColor="#6D6875"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Contenue Tweet"
+                        android:textColor="#6D6875"
+                        android:textSize="24sp" />
+
+
+                    <ImageView
+                        android:layout_width="82dp"
+                        android:layout_height="82dp"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="Profil utilisateur"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
         </ScrollView>
-
-
-
-
-
-
 
 
     </LinearLayout>
 
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck">
 
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#514E57"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/Menu">
+
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/Profil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/Profil" />
+
+                <Button
+                    android:id="@+id/Button_EcrireTweet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="110dp"
+                    android:text="@string/Ecrire" />
+
+                <Button
+                    android:id="@+id/Inscription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="160dp"
+                    android:text="Inscription" />
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.My_Application2">
         <activity
+            android:name=".Connexion"
+            android:exported="false" />
+        <activity
+            android:name=".Inscription"
+            android:exported="false" />
+        <activity
+            android:name=".Profil"
+            android:exported="false" />
+        <activity
+            android:name=".Screen_2"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
