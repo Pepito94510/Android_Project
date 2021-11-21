@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My_Application2</string>
+    <string name="Profil">Profil</string>
+    <string name="Ecrire">Ecrire Tweet</string>
+    <string name="LogoDescription">Logo ressemblant à une vague</string>
+    <string name="Menu">Menu</string>
 </resources>
